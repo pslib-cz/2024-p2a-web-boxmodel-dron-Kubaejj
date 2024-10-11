@@ -18,7 +18,7 @@
     }
     .page__logo::before {
         content: "";
-        display: block;
+        display:inline-block;
         background: center / contain no-repeat transparent;
         /*
         background-position: center;
@@ -26,9 +26,10 @@
         background-repeat: no-repeat;
         */
         background-image: url("../images/logo.svg");
-        width: 2em;
         height: 1em;
         font-size: 1.5em;
+
+        width: 2em;
     }
     .page__logo > span {
         display: none;
@@ -42,7 +43,30 @@
         display: block;
         width: 100%;
     }
+    .page__header{
+        background-image: url("../images/header-2560w.webp");
+        background-size: cover; 
+        background-size: top left;
+    
+    }
+    .page__logo{
+        display: inline-block;
+        padding: 1em;
+      
 
+        /*
+        bylo tu text-align: center; 
+        funguje jen kdyz to je display block
+        a neni tam width u ::before
+        */
+    }
+    .page__logo-container{
+        text-align: center;
+    }
+    .page__intro{
+        color: var(--light, white);
+       
+    }
 
 
 }
