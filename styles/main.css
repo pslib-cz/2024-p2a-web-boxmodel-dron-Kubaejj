@@ -48,11 +48,11 @@
         background-size: cover; 
         background-size: top left;
     
+        padding: 1em;
     }
     .page__logo{
         display: inline-block;
         padding: 1em;
-      
 
         /*
         bylo tu text-align: center; 
@@ -65,8 +65,28 @@
     }
     .page__intro{
         color: var(--light, white);
+        margin-left: 1em;
+        margin-bottom: 1em;
        
     }
+    .button{
+        background-color: var(--primary, teal);
+        color: var(--light);
+        padding: 0.5em 1em;
+        text-decoration: none;
 
-
+        border-radius: 0.5em; 
+        cursor: pointer;
+        font-weight: 700;
+        display: inline-block;/*buttony vzdy inlineblock*/
+     
+    }
+    .button:hover{
+       
+        text-decoration: underline;
+    }
+    .button--light{
+        background-color: var(--light, white);
+        color: var(--black, black);
+    }
 }
