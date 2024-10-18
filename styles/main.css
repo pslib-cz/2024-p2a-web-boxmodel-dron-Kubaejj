@@ -96,11 +96,25 @@ toto tu bylo predtim, je to druha varianta ale je horsi
 */
     .page__intro {
         color: var(--light, white);
-        margin-left: 1em;
+        margin-left: 8em;
         margin-bottom: 1em;
-
+        margin-top: 10em;
+    
+    }
+    @media screen and (max-width: 1000px) {
+        .page__intro {
+            margin-left: 0;
+            margin-top: 2em;
+        }
+        
     }
 
+    h2{
+        font-size: 2em;
+        font-weight: 700;
+        margin-top: 2em;
+    }
+ 
     .button {
         background-color: var(--primary, teal);
         color: var(--light);
@@ -126,6 +140,7 @@ toto tu bylo predtim, je to druha varianta ale je horsi
     .button--light {
         background-color: var(--light, white);
         color: var(--black, black);
+        margin-bottom: 1em;
     }
 
    
@@ -133,14 +148,27 @@ toto tu bylo predtim, je to druha varianta ale je horsi
         padding: 1em;
         max-width: 960px;
         margin: 0 auto; /*takto se centruji blocky*/
-     
+      
     }
-
+    .text-h1 {
+        font-size: 4em;
+        font-weight: 900;
+        display: inline;
+       
+    }
+    .text-h1--smaller {
+        font-size: 2em;
+    }
     .text-h3{
         font-size: 1.125em;
         font-weight: 700;
         margin-bottom: 1em;
+    }  
+    .text-h3--bigger{
+        font-size: 3em;
+        margin: 0em;
     }
+
     .outline-box {
         border: 3px solid var(--primary, teal);
         padding: 1em;
@@ -152,19 +180,28 @@ toto tu bylo predtim, je to druha varianta ale je horsi
         background-color: var(--gray, gray);
         color: var(--light, white);
         text-align: center;
-        padding:2em ;
+        padding:2.5em ;
     }
     .list > li::marker{
         color: var(--primary, teal);
+    }
+    .list > li{
+        margin-bottom: 0.5em;
     }
     .product{
         padding: 1em;
         max-width: 24em;
         display: inline-block;
     }
-    .text-h3--bigger{
-        font-size: 1.5em;
-    }
-
+    
+ .page__footer{
+    background-color: var(--gray, gray);
+ }
+ .page__footer p {
+    color: var(--light, white);
+    text-align: center;
+   padding: 2em;
+   margin-bottom: 0;
+ }
 
 }
