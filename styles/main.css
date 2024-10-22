@@ -68,8 +68,7 @@ design;
         background-image: url("../images/header-2560w.webp");
         background-size: cover;
         background-size: top left;
-
-        padding: 1em;
+     
     }
 
     .page__logo {
@@ -96,15 +95,20 @@ toto tu bylo predtim, je to druha varianta ale je horsi
 */
     .page__intro {
         color: var(--light, white);
-        margin-left: 8em;
-        margin-bottom: 1em;
-        margin-top: 10em;
+        padding-left: 8em;
+        padding-top: 10em;
+        padding-bottom: 5em;
+        
+        width: 40%;
     
     }
     @media screen and (max-width: 1000px) {
         .page__intro {
-            margin-left: 0;
-            margin-top: 2em;
+            padding-left: 2em;
+            padding-right: 2em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            width: auto;
         }
         
     }
@@ -127,7 +131,7 @@ toto tu bylo predtim, je to druha varianta ale je horsi
         display: inline-block;
         /*buttony vzdy inlineblock*/
 
-
+        
     }
     .button:hover {
 
@@ -153,7 +157,7 @@ toto tu bylo predtim, je to druha varianta ale je horsi
     .text-h1 {
         font-size: 4em;
         font-weight: 900;
-        display: inline;
+     
        
     }
     .text-h1--smaller {
