@@ -33,10 +33,11 @@ design;
         background-image: url("../images/logo.svg");
 
         font-size: 1.5em;
-       /* height: 1em;
+        /* height: 1em;
         width: 2em; */
         width: auto;
-        height: 100%;/* u width nedavat 100% protoze to zpusobi ze se to zvetsi na plnou sirku*/
+        height: 100%;
+        /* u width nedavat 100% protoze to zpusobi ze se to zvetsi na plnou sirku*/
     }
 
     .page__logo>span {
@@ -50,12 +51,13 @@ design;
     .image-responsive {
         display: block;
         width: 100%;
-   
+
     }
-    .picture-box{
+
+    .picture-box {
         margin: 1em 0;
     }
-  
+
     .picture-box__caption {
 
         font-size: 0.8em;
@@ -68,11 +70,11 @@ design;
         background-image: url("../images/header-2560w.webp");
         background-size: cover;
         background-size: top left;
-     
+
     }
 
     .page__logo {
-       /* display: inline-block;
+        /* display: inline-block;
         padding: 1em;
 */
         /*
@@ -87,7 +89,8 @@ design;
         aspect-ratio: 42/24;
         margin: 0 auto;
     }
-/*
+
+    /*
 toto tu bylo predtim, je to druha varianta ale je horsi
     .page__logo-container {
         text-align: center;
@@ -98,32 +101,23 @@ toto tu bylo predtim, je to druha varianta ale je horsi
         padding-left: 8em;
         padding-top: 10em;
         padding-bottom: 5em;
-        
+
         width: 40%;
-    
-    }
-    @media screen and (max-width: 1000px) {
-        .page__intro {
-            padding-left: 2em;
-            padding-right: 2em;
-            padding-top: 2em;
-            padding-bottom: 2em;
-            width: auto;
-        }
-        
+
     }
 
-    h2{
+
+    h2 {
         font-size: 2em;
         font-weight: 700;
         margin-top: 2em;
     }
- 
+
     .button {
         background-color: var(--primary, teal);
         color: var(--light);
         padding: 0.75em 2em;
-       text-decoration: none;
+        text-decoration: none;
 
         border-radius: 0.5em;
         cursor: pointer;
@@ -131,44 +125,51 @@ toto tu bylo predtim, je to druha varianta ale je horsi
         display: inline-block;
         /*buttony vzdy inlineblock*/
 
-        
+
     }
+
     .button:hover {
 
-        text-decoration: underline; 
+        text-decoration: underline;
         text-decoration-thickness: 0.05em;
         background-color: var(--black, black);
         color: var(--light, white);
 
     }
+
     .button--light {
         background-color: var(--light, white);
         color: var(--black, black);
         margin-bottom: 1em;
     }
 
-   
+
     .page__content {
         padding: 1em;
         max-width: 960px;
-        margin: 0 auto; /*takto se centruji blocky*/
-      
+        margin: 0 auto;
+        /*takto se centruji blocky*/
+
     }
+
     .text-h1 {
         font-size: 4em;
         font-weight: 900;
-     
-       
+
+
     }
+
     .text-h1--smaller {
         font-size: 2em;
     }
-    .text-h3{
+
+    .text-h3 {
         font-size: 1.125em;
         font-weight: 700;
         margin-bottom: 1em;
-    }  
-    .text-h3--bigger{
+    }
+
+    .text-h3--bigger {
         font-size: 3em;
         margin: 0em;
     }
@@ -177,35 +178,103 @@ toto tu bylo predtim, je to druha varianta ale je horsi
         border: 3px solid var(--primary, teal);
         padding: 1em;
         margin: 1em 0;
-       
+
 
     }
+
     .outline-box--black {
         background-color: var(--gray, gray);
         color: var(--light, white);
         text-align: center;
-        padding:2.5em ;
+        padding: 2.5em;
     }
-    .list > li::marker{
+
+    .list>li::marker {
         color: var(--primary, teal);
     }
-    .list > li{
+
+    .list>li {
         margin-bottom: 0.5em;
     }
-    .product{
+
+    .product {
         padding: 1em;
         max-width: 24em;
         display: inline-block;
     }
+
+    .page__footer {
+        background-color: var(--gray, gray);
+        color: var(--light, white);
+        padding: 2em;
+        text-align: center;
+    }
+
+
+    .image-responsive {
+        display: block;
+        width: 100%;
+
+    }
+    /* pokud mam nejaky inline container tak do nej dam jen inline elementy */
+
     
- .page__footer{
-    background-color: var(--gray, gray);
- }
- .page__footer p {
-    color: var(--light, white);
-    text-align: center;
-   padding: 2em;
-   margin-bottom: 0;
- }
+    .page__intro{
+        color: var(--light, white);
+    }
+    .page__section{
+        padding: 1em;
+       
+        
+
+    }
+    .gallery{ 
+     --indent:0.5em;
+        margin: calc(-1 * var(--indent));
+      
+    }   
+    .gallery__item {
+        display: block;
+      
+        margin: var(--indent);
+    }
+    @media (min-width: 768px) {
+        .gallery__item {
+            display: inline-block;
+            width: calc( 50% - 2 * var(--indent));
+        }
+        .gallery__item--100w{
+            width: calc(100% - 2 * var(--indent));
+        }
+        
+    }
+
+
+
+
+
+    .link {
+        color: var(--primary, teal);
+        text-decoration: none;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+    }
+
+    .link--inverted {
+        color: var(--light, white);
+    }
+
+    @media screen and (max-width: 1000px) {
+        .page__intro {
+            padding-left: 2em;
+            padding-right: 2em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            width: auto;
+        }
+
+    }
 
 }
